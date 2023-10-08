@@ -1,10 +1,14 @@
 #!/usr/bin/python3
+"""
+find area and perimeter of square
+"""
+
 
 class square():
-    """"square class""""
+    """square class"""
+
     width = 0
     height = 0
-
 
     def __init__(self, *args, **kwargs):
         for key, value in kwargs.items():
@@ -19,6 +23,7 @@ class square():
 
     def __str__(self):
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
 
