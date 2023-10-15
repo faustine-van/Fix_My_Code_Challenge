@@ -9,6 +9,26 @@ class Square():
         self.width = width
         self.height = height
 
+    @property
+    def width(self):
+        """ retrieve """
+        return self.__width
+
+    @width.setter
+    def width(self, value):
+        """ set """
+        self.__width = value
+
+    @property
+    def height(self):
+        """ retrieve """
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+        """ set """
+        self.__height = value
+
     def area_of_my_square(self):
         """ Area of the square """
         return self.width * self.width
