@@ -18,6 +18,8 @@ class Square():
     def width(self, value):
         """ set """
         self.__width = value
+        if not isinstance(value, int):
+            raise TypeError("width must be an int")
 
     @property
     def height(self):
@@ -28,6 +30,8 @@ class Square():
     def height(self, value):
         """ set """
         self.__height = value
+        if not isinstance(value, int):
+            raise TypeError("height must be an int")
 
     def area_of_my_square(self):
         """ Area of the square """
