@@ -2,7 +2,7 @@
 """Square"""
 
 
-class square():
+class Square():
     """ Square class """
     width = 0
     height = 0
@@ -16,7 +16,7 @@ class square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
-        return (self.width * 4)
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
         return "{}/{}".format(self.width, self.height)
